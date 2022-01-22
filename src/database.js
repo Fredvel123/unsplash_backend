@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://0.0.0.0:27017/unsplash_db';
+const URI = `mongodb+srv://${process.env.USER}:${process.env.PASSWD}@cluster0.iyu84.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 const config = {
   useNewUrlParser: true,
   useUnifiedTopology: true
