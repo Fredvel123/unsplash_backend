@@ -14,7 +14,7 @@ app.set('port', process.env.PORT || 8000);
 
 
 // routers API
-
+app.use('/api/users', require('./routers/users.routers')); // users routers
 
 app.get('/', (req, res) => {
  res.json({

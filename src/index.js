@@ -1,5 +1,5 @@
 const app = require('./app');
-const PORT = app.get('PORT') 
+const PORT = app.get('port') 
 
 // data base mongodb config
 require('./database');

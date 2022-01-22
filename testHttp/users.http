@@ -1,0 +1,26 @@
+GET http://localhost:8000/api/users/all HTTP/1.1
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWI0OWU1MzFhMjdjMDhiM2Y2YTkzMyIsImlhdCI6MTY0MjgxMTE0MCwiZXhwIjoxNjQ0MDIwNzQwfQ.HX7kxSmcr6qyHJ9rzHzxTaz0wr-U9KjI63r7CTo_ceU
+
+
+###
+POST http://localhost:8000/api/users/signup HTTP/1.1
+Content-type: application/json
+
+{
+  "name": "freddy",
+  "email": "freddy@gmail.com",
+  "password": "freddy"
+}
+###
+DELETE http://localhost:8000/api/users/remove/61eb489f7f46447fd3ca15b7 HTTP/1.1
+###
+POST http://localhost:8000/api/users/login HTTP/1.1
+Content-type: application/json
+
+{
+  "email": "freddy@gmail.com",
+  "password": "freddy"
+}
+###
+GET http://localhost:8000/api/users/user HTTP/1.1
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWI0OWU1MzFhMjdjMDhiM2Y2YTkzMyIsImlhdCI6MTY0MjgxMTE0MCwiZXhwIjoxNjQ0MDIwNzQwfQ.HX7kxSmcr6qyHJ9rzHzxTaz0wr-U9KjI63r7CTo_ceU
