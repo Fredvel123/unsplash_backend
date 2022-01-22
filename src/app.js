@@ -15,6 +15,7 @@ app.set('port', process.env.PORT || 8000);
 
 // routers API
 app.use('/api/users', require('./routers/users.routers')); // users routers
+app.use('/api/images', require('./routers/images.routers')); // images routers
 
 app.get('/', (req, res) => {
  res.json({
